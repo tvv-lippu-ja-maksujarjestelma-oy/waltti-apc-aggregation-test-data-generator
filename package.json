@@ -56,5 +56,8 @@
     "testPathIgnorePatterns": [
       "./dist"
     ]
+  },
+  "config": {
+    "pulsarVersion": "2.9.1"
   }
 }
