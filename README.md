@@ -1,3 +1,3 @@
-# waltti-apc-match-test-data-generator
+# waltti-apc-aggregation-test-data-generator
 
-Generate APC match test data into Pulsar.
+Generate APC aggregation test data into Pulsar.
