@@ -134,7 +134,7 @@ const stopsAndDoorsTestData: StopAndDoorsAggregateApcData[] = [
       },
     ],
   },
-  // The children disembark at the same stop to go to school. One of the
+  // The children disembark on the same stop to go to school. One of the
   // children uses the front door to get out.
   {
     stopId: "201504",
@@ -166,7 +166,7 @@ const stopsAndDoorsTestData: StopAndDoorsAggregateApcData[] = [
       },
     ],
   },
-  // Many of the adults disembark at the same stop.
+  // Many of the adults disembark on the same stop.
   {
     stopId: "201625",
     stopSequence: 5,
@@ -191,7 +191,7 @@ const stopsAndDoorsTestData: StopAndDoorsAggregateApcData[] = [
       },
     ],
   },
-  // No one embarks or disembarks at this stop.
+  // No one embarks or disembarks on this stop.
   {
     stopId: "201285",
     stopSequence: 6,
