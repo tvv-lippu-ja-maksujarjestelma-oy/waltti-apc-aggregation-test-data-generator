@@ -29,7 +29,7 @@ export interface Config {
 
 const getRequired = (envVariable: string) => {
   const variable = process.env[envVariable];
-  if (typeof variable === "undefined") {
+  if (variable === undefined) {
     throw new Error(`${envVariable} must be defined`);
   }
   return variable;
@@ -43,7 +43,7 @@ const getOptionalBooleanWithDefault = (
 ) => {
   let result = defaultValue;
   const str = getOptional(envVariable);
-  if (typeof str !== "undefined") {
+  if (str !== undefined) {
     if (!["false", "true"].includes(str)) {
       throw new Error(`${envVariable} must be either "false" or "true"`);
     }
