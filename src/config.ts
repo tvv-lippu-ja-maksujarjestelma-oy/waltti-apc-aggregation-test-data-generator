@@ -89,7 +89,7 @@ const createPulsarLog =
   };
 
 const getPulsarCompressionType = (): Pulsar.CompressionType => {
-  const compressionType = getOptional("PULSAR_COMPRESSION_TYPE") || "ZSTD";
+  const compressionType = getOptional("PULSAR_COMPRESSION_TYPE") ?? "ZSTD";
   // tsc does not understand:
   // if (!["Zlib", "LZ4", "ZSTD", "SNAPPY"].includes(compressionType)) {
   if (
@@ -136,7 +136,7 @@ const getPulsarConfig = (logger: pino.Logger) => {
 };
 
 const getHealthCheckConfig = () => {
-  const port = parseInt(getOptional("HEALTH_CHECK_PORT") || "8080", 10);
+  const port = parseInt(getOptional("HEALTH_CHECK_PORT") ?? "8080", 10);
   return { port };
 };
 
